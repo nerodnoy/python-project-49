@@ -1,7 +1,9 @@
-import prompt 
-from brain_games.games.even_game import rule, is_even
+import prompt
+from brain_games.games.even_game import rule
+
 
 max_rounds = 3
+
 
 def play(is_even):
 
@@ -11,7 +13,7 @@ def play(is_even):
 
     print(rule)
 
-    for _ in range (max_rounds):
+    for _ in range(max_rounds):
 
         number, correct_answer = is_even()
         print(f'Question: {number}')
@@ -20,8 +22,7 @@ def play(is_even):
         if player_answer == correct_answer:
             print('Correct!')
         else:
-            print(f'''{player_answer} is wrong answer ;(. Correct answer was {correct_answer}'.
-Let's try again, {name}!''') 
-            print(f"Let's try again, {name}!")
+            print(f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet\'s try again, {name}!")
+            break
     else:
         print(f'Congratulations, {name}!')
