@@ -1,18 +1,20 @@
 import random
-import math
 
 
 rule = 'Find the greatest common divisor of given numbers.'
 
 
-def NOD():
+def gcd():
 
-    one = random.randint(1, 100)
-    two = random.randint(1, 100)
-
-    number = '{} {}'.format(one, two)
-
-    answer = math.gcd(one, two)
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    numbers = f'{num1} {num2}'
+    while num1 != 0 and num2 != 0:
+        if num1 > num2:
+            num1 = num1 % num2
+        else:
+            num2 = num2 % num1
+    answer = num1 + num2
     correct_answer = str(answer)
 
-    return number, correct_answer
+    return numbers, correct_answer
