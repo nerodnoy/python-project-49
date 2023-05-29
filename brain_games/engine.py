@@ -1,11 +1,12 @@
 import prompt
-from brain_games.games.even_game import rule
+# from brain_games.games.calc_game import rule, calc
+# from brain_games.games.even_game import rule, is_even
 
 
 max_rounds = 3
 
 
-def play(is_even):
+def play():    #name of function of the game
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -15,7 +16,7 @@ def play(is_even):
 
     for _ in range(max_rounds):
 
-        number, correct_answer = is_even()
+        number, correct_answer = ###()   # game_conditions 
         print(f'Question: {number}')
         player_answer = prompt.string('Your answer: ')
 
