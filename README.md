@@ -5,3 +5,7 @@
 is_even game:
 
 [![asciicast](https://asciinema.org/a/gxYTRyXnzjhfKyZQEOIRpsaGp.svg)](https://asciinema.org/a/gxYTRyXnzjhfKyZQEOIRpsaGp)
+
+calc game:
+
+[![asciicast](https://asciinema.org/a/BVeQtFNNTPAj2Za4739bJ7q4e.svg)](https://asciinema.org/a/BVeQtFNNTPAj2Za4739bJ7q4e)
