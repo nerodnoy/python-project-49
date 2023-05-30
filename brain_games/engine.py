@@ -8,7 +8,7 @@ from brain_games.games.prime_game import rule, is_prime
 max_rounds = 3
 
 
-def play(is_prime):
+def play(game):
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -25,7 +25,9 @@ def play(is_prime):
         if player_answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet\'s try again, {name}!")
+            print(f"'{player_answer}' is wrong answer ;(. \
+Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
             break
     else:
         print(f'Congratulations, {name}!')
