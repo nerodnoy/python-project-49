@@ -30,11 +30,9 @@
 
 2. Переходим в директорию и устанавливаем билд.
 
- `cd python-project-49/`
- 
- `poetry build`
- 
- `python -m pip install --user dist/*.whl`
+ `cd python-project-49/
+ poetry build
+ python -m pip install --user dist/*.whl`
 
 ### Команды для вызова игр
 
