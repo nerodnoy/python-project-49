@@ -27,7 +27,7 @@
 
     git clone git@github.com:nerodnoy/python-project-49.git
 
-
+>>
 
     cd python-project-49/
     poetry build
