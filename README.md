@@ -19,6 +19,7 @@
 ### Необходимые требования
 
 [Python 3.8.1+](https://www.python.org/downloads/)
+
 [Poetry](https://python-poetry.org/docs/)
 
 ### Установка
