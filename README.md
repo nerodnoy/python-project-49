@@ -10,6 +10,10 @@ calc game:
 
 [![asciicast](https://asciinema.org/a/BVeQtFNNTPAj2Za4739bJ7q4e.svg)](https://asciinema.org/a/BVeQtFNNTPAj2Za4739bJ7q4e)
 
-gcd game (to be reworked):
+gcd game:
 
 [![asciicast](https://asciinema.org/a/2Fo9xcvCZNwnvG8bayW9P0qMX.svg)](https://asciinema.org/a/2Fo9xcvCZNwnvG8bayW9P0qMX)
+
+progression game:
+
+[![asciicast](https://asciinema.org/a/wMUj5iSIL7Aaig6nvJkUnIKQt.svg)](https://asciinema.org/a/wMUj5iSIL7Aaig6nvJkUnIKQt)
