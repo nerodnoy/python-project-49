@@ -1,9 +1,10 @@
 import random
 
+
 rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even():
+def game_conditions():
 
     number = random.randint(0, 100)
 

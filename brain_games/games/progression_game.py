@@ -3,7 +3,7 @@ import random
 rule = 'What number is missing in the progression?'
 
 
-def progression():
+def game_conditions():
     num = random.randint(1, 20)
     gap = random.randint(2, 5)
 

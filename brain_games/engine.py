@@ -1,7 +1,7 @@
 import prompt
 # from brain_games.games.calc_game import rule, calc
 # from brain_games.games.even_game import rule, is_even
-from brain_games.games.gcd_game import rule, gcd
+# from brain_games.games.gcd_game import rule, gcd
 # from brain_games.games.progression_game import rule, progression
 # from brain_games.games.prime_game import rule, is_prime
 
@@ -14,11 +14,11 @@ def play(game):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
 
-    print(rule)
+    print(game.rule)
 
     for _ in range(max_rounds):
 
-        number, correct_answer = gcd()  # game_conditions
+        number, correct_answer = game.game_conditions()
         print(f'Question: {number}')
         player_answer = prompt.string('Your answer: ')
 

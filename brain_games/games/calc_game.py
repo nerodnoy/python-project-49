@@ -4,7 +4,7 @@ import random
 rule = 'What is the result of the expression?'
 
 
-def calc():
+def game_conditions():
 
     operand1 = random.randint(1, 20)
     operand2 = random.randint(1, 10)

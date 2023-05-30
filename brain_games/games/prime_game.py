@@ -4,7 +4,7 @@ import random
 rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime():
+def game_conditions():
 
     numbers = random.randint(3, 100)
 
