@@ -1,14 +1,14 @@
 import prompt
 # from brain_games.games.calc_game import rule, calc
 # from brain_games.games.even_game import rule, is_even
-# from brain_games.games.gcd_game import rule, gcd
+from brain_games.games.gcd_game import rule, gcd
 # from brain_games.games.progression_game import rule, progression
-from brain_games.games.prime_game import rule, is_prime
+# from brain_games.games.prime_game import rule, is_prime
 
 max_rounds = 3
 
 
-def play(game):
+def play(gcd):
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -18,7 +18,7 @@ def play(game):
 
     for _ in range(max_rounds):
 
-        number, correct_answer = is_prime()  # game_conditions
+        number, correct_answer = gcd()  # game_conditions
         print(f'Question: {number}')
         player_answer = prompt.string('Your answer: ')
 
