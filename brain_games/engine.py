@@ -8,7 +8,7 @@ from brain_games.games.gcd_game import rule, gcd
 max_rounds = 3
 
 
-def play(gcd):
+def play(game):
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

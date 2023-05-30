@@ -4,6 +4,7 @@ rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even():
+
     number = random.randint(0, 100)
 
     if number % 2 == 0:
