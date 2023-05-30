@@ -24,11 +24,11 @@
 
 ### Установка
    
-1. Клонируем репозиторий.
+
     git clone git@github.com:nerodnoy/python-project-49.git
 
 >>
-2. Переходимв директорию и устанавливаем билд.
+
     cd python-project-49/
     poetry build
     python -m pip install --user dist/*.whl
