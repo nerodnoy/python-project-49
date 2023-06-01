@@ -1,21 +1,21 @@
 import prompt
 
 
-max_rounds = 3
+MAX_ROUNDS = 3
 
 
-def play(game):
+def launch_game(game):
     '''The Engine. It greets players and boots games.'''
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
 
-    print(game.rule)
+    print(game.RULE)
 
-    for _ in range(max_rounds):
+    for _ in range(MAX_ROUNDS):
 
-        number, correct_answer = game.game_conditions()
-        print(f'Question: {number}')
+        question, correct_answer = game.game_conditions()
+        print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
 
         if player_answer == correct_answer:

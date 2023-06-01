@@ -1,7 +1,7 @@
 import random
 
 
-rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -21,11 +21,11 @@ def is_prime(number):
 
 def game_conditions():
 
-    numbers = random.randint(1, 100)
+    question = random.randint(1, 100)
 
-    if is_prime(numbers) is True:
+    if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    return numbers, correct_answer
+    return question, correct_answer

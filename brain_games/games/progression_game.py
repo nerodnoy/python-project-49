@@ -1,32 +1,29 @@
 import random
 
-rule = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
-def progression():
-
-    number_one = random.randint(1, 20)
-    line = [number_one]
-    size = random.randint(5, 10)
+def create_progression():
+    first_number = random.randint(1, 20)
+    progression = [first_number]
+    progression_length = random.randint(5, 10)
     gap = random.randint(2, 10)
 
-    while len(line) <= size:
-        next_number = line[-1] + gap
-        line.append(next_number)
+    while len(progression) <= progression_length:
+        next_number = progression[-1] + gap
+        progression.append(next_number)
 
-    return line
+    return progression
 
 
 def game_conditions():
+    progression = create_progression()
+    answer = random.choice(progression)
 
-    line = progression()
-    answer = random.choice(line)
+    index = progression.index(answer)
+    progression[index] = '..'
 
-    index = line.index(answer)
-
-    line[index] = '..'
-
-    numbers = ' '.join(map(str, line))
+    question = ' '.join(map(str, progression))
     correct_answer = str(answer)
 
-    return numbers, correct_answer
+    return question, correct_answer

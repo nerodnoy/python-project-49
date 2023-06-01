@@ -1,23 +1,23 @@
 import random
 
 
-rule = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def game_conditions():
 
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
+    number1 = random.randint(1, 100)
+    number2 = random.randint(1, 100)
 
-    numbers = f'{num1} {num2}'
+    question = f'{number1} {number2}'
 
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
+    while number1 != 0 and number2 != 0:
+        if number1 > number2:
+            number1 = number1 % number2
         else:
-            num2 = num2 % num1
+            number2 = number2 % number1
 
-    answer = num1 + num2
+    answer = number1 + number2
     correct_answer = str(answer)
 
-    return numbers, correct_answer
+    return question, correct_answer

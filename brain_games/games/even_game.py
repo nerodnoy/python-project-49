@@ -1,16 +1,15 @@
 import random
 
 
-rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_conditions():
+    question = random.randint(0, 100)
 
-    number = random.randint(0, 100)
-
-    if number % 2 == 0:
+    if question % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    return number, correct_answer
+    return question, correct_answer
